@@ -15,6 +15,7 @@ import org.jun.designpattern.observer.CurrentConditionsDisplay;
 import org.jun.designpattern.observer.WeatherData;
 import org.jun.generics.GenericsOperator;
 import org.jun.jdbc.MysqlOperator;
+import org.jun.liulishuo.PracticeTime;
 import org.jun.reflect.ReflectOperator;
 import org.jun.algorithms.array.QuickSort;
 import org.jun.thread.ShowStopThread;
@@ -22,6 +23,7 @@ import org.jun.thread.ShowStopThread;
 public class Application {
 
     public static void main(String[] args){
+
 //        Collection col = new Collection();
 //        col.runCollectionDemo();
 //
@@ -94,35 +96,35 @@ public class Application {
 //        StarbuzzCoffee.order();
 
 
-        int[][] matrix = {
-                { 1, 2, 3},
-                {10, 11, 12},
-                {20, 21, 22}
-        };
-        Matrix matrix1 = new Matrix();
-        int target = 30;
-        int[] position = matrix1.findElementInMatrix(matrix, target);
-        if(position != null){
-            System.out.println("Target: " + target + " is in Row: " + position[0] + ", Column: " + position[1]);
-        } else {
-            System.out.println("Target " + target + " doesn't exist in this matrix.");
-        }
-
-        // Queue
-        MyQueue myQueue = new MyQueue();
-        myQueue.enQueue(1);
-        myQueue.enQueue(2);
-        myQueue.deQueue();
-        myQueue.deQueue();
-        System.out.println("The front element in my queue is " + myQueue.getFront());
-
-        MyCircularQueue myCircularQueue = new MyCircularQueue(5);
-        myCircularQueue.enQueue(2);
-        myCircularQueue.enQueue(3);
-        myCircularQueue.enQueue(4);
-        myCircularQueue.deQueue();
-        int front = myCircularQueue.Front();
-        System.out.println(front);
+//        int[][] matrix = {
+//                { 1, 2, 3},
+//                {10, 11, 12},
+//                {20, 21, 22}
+//        };
+//        Matrix matrix1 = new Matrix();
+//        int target = 30;
+//        int[] position = matrix1.findElementInMatrix(matrix, target);
+//        if(position != null){
+//            System.out.println("Target: " + target + " is in Row: " + position[0] + ", Column: " + position[1]);
+//        } else {
+//            System.out.println("Target " + target + " doesn't exist in this matrix.");
+//        }
+//
+//        // Queue
+//        MyQueue myQueue = new MyQueue();
+//        myQueue.enQueue(1);
+//        myQueue.enQueue(2);
+//        myQueue.deQueue();
+//        myQueue.deQueue();
+//        System.out.println("The front element in my queue is " + myQueue.getFront());
+//
+//        MyCircularQueue myCircularQueue = new MyCircularQueue(5);
+//        myCircularQueue.enQueue(2);
+//        myCircularQueue.enQueue(3);
+//        myCircularQueue.enQueue(4);
+//        myCircularQueue.deQueue();
+//        int front = myCircularQueue.Front();
+//        System.out.println(front);
         //        MyCircularQueue obj = new MyCircularQueue(k);
 //         boolean param_1 = obj.enQueue(value);
 //         boolean param_2 = obj.deQueue();
