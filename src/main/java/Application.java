@@ -2,6 +2,7 @@ import org.jun.Lambda.Lambda;
 import org.jun.algorithms.Trie;
 import org.jun.algorithms.array.Matrix;
 import org.jun.algorithms.array.QuickSort;
+import org.jun.algorithms.backtracking.Queens;
 import org.jun.algorithms.dp.Edist;
 import org.jun.algorithms.dp.GFG;
 import org.jun.algorithms.dp.LongestCommonSubsequence;
@@ -10,6 +11,7 @@ import org.jun.algorithms.queue.MyQueue;
 import org.jun.algorithms.sort.InversionNumber;
 import org.jun.algorithms.string.EqualArea;
 import org.jun.collections.Collection;
+import org.jun.collections.TestHashMap;
 import org.jun.designpattern.decorator.StarbuzzCoffee;
 import org.jun.designpattern.observer.CurrentConditionsDisplay;
 import org.jun.designpattern.observer.WeatherData;
@@ -23,6 +25,9 @@ import org.jun.thread.ShowStopThread;
 public class Application {
 
     public static void main(String[] args){
+        Queens queens = new Queens(8);
+        queens.calNQueens(0);
+//        TestHashMap.run();
 
 //        Collection col = new Collection();
 //        col.runCollectionDemo();

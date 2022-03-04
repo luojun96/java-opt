@@ -2,7 +2,7 @@ package org.jun.algorithms.sort;
 
 // https://time.geekbang.org/column/article/281803
 // Input: 7,9,2,6,14,12
-/*
+/**
     Input: 7,9,2,6,14,12
     Output: 5
     The inversion numbers are: (7,2), (9,2), (7,6), (9,6), (14,12)
